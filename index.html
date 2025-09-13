@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lemon | Tu App de Gimnasio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">LEMON</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">Funcionalidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#screenshots">App</a></li>
+          <li class="nav-item"><a class="nav-link" href="#download">Descargar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Gestión de turnos y asistencia fácil</h1>
+      <p class="lead mb-4">Simplificá tu rutina de gimnasio. Reservá clases y registrá tu asistencia, todo desde tu celular.</p>
+      <a href="#download" class="btn btn-primary btn-lg mt-3">Descargá Lemon App</a>
+    </div>
+  </header>
+
+  <section id="features" class="py-5 bg-dark text-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">¿Por qué usar Lemon?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card card bg-secondary p-4 rounded-3 shadow">
+            <div class="feature-icon mb-3">📅</div>
+            <h4>Reservá con un tap</h4>
+            <p>Explorá el horario de clases y reservá tu lugar al instante.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card card bg-secondary p-4 rounded-3 shadow">
+            <div class="feature-icon mb-3">📱</div>
+            <h4>Tu credencial digital</h4>
+            <p>Generá tu QR personal y registrá tu asistencia en segundos.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card card bg-secondary p-4 rounded-3 shadow">
+            <div class="feature-icon mb-3">📊</div>
+            <h4>Historial de asistencia</h4>
+            <p>Consultá tu historial de clases y entrenamientos en un solo lugar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-5 text-dark">La App en acción</h2>
+      <div id="screenshotCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <img src="Screenshot_20250913_143801.png" class="d-block img-fluid carousel-img rounded shadow" alt="Screenshot 1">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <img src="Screenshot_20250913_143806.png" class="d-block img-fluid carousel-img rounded shadow" alt="Screenshot 2">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <img src="Screenshot_20250913_143815.png" class="d-block img-fluid carousel-img rounded shadow" alt="Screenshot 3">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <img src="Screenshot_20250913_143829.png" class="d-block img-fluid carousel-img rounded shadow" alt="Screenshot 4">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="py-5 text-center text-white bg-dark">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Descargá Lemon</h2>
+      <p class="mb-4">Pronto disponible en las tiendas de aplicaciones. ¡Mantente atento a las novedades!</p>
+      <a href="#" class="btn btn-success btn-lg mx-2">Google Play</a>
+      <a href="#" class="btn btn-dark btn-lg mx-2">App Store</a>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-black text-light py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Contacto</h2>
+      <p>¿Consultas? Escribinos a <a href="mailto:info@lemonapp.com" class="text-primary">info@lemonapp.com</a></p>
+      <p>Seguinos en <a href="#" class="text-primary">Instagram</a></p>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light text-center py-3">
+    <p class="mb-0">© 2025 Lemon App. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

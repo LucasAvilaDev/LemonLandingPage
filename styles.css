@@ -1,0 +1,99 @@
+:root {
+  --bs-body-bg: #13212E;
+  --bs-body-color: #667080;
+  --bs-dark: #0D1B2A;
+  --bs-light: #F4F6F8;
+  --bs-primary: #E9C46A;
+  --bs-secondary: #1C2D43;
+}
+
+body {
+  font-family: 'Changa', sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+/* Navbar Customization */
+.navbar {
+  background-color: var(--bs-dark) !important;
+}
+
+.navbar-brand {
+  color: var(--bs-primary) !important;
+}
+
+/* Hero Section Customization */
+.hero {
+  background-color: var(--bs-dark);
+  padding: 10rem 0 5rem;
+  min-height: 100vh;
+}
+
+.hero h1 {
+  color: var(--bs-light);
+}
+
+.hero .btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: var(--bs-dark);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #f0d588;
+  border-color: #f0d588;
+}
+
+/* Features Section Customization */
+#features {
+  background-color: var(--bs-dark);
+}
+
+.feature-card {
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
+  border: none;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--bs-primary);
+}
+
+/* Screenshots Section Customization */
+#screenshots {
+  background-color: var(--bs-light);
+}
+
+.carousel-img {
+  max-height: 80vh;
+  object-fit: contain;
+  margin: auto;
+  border: 4px solid var(--bs-dark);
+}
+
+/* Download & Contact Sections Customization */
+#download, #contact {
+  background-color: var(--bs-dark);
+}
+
+#contact a {
+  color: var(--bs-primary);
+}
+
+/* Footer Customization */
+footer {
+  background-color: var(--bs-dark);
+  color: var(--bs-body-color);
+}
+
+/* Other custom styles */
+.rounded-3 {
+  border-radius: 1rem !important;
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
