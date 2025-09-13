@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lemon | Tu App de Gimnasio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -22,6 +23,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#features">Funcionalidades</a></li>
           <li class="nav-item"><a class="nav-link" href="#screenshots">App</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Opiniones</a></li>
           <li class="nav-item"><a class="nav-link" href="#download">Descargar</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
@@ -31,86 +33,135 @@
 
   <header class="hero d-flex align-items-center text-center text-white">
     <div class="container">
-      <h1 class="display-4 fw-bold mb-3">Gestión de turnos y asistencia fácil</h1>
-      <p class="lead mb-4">Simplificá tu rutina de gimnasio. Reservá clases y registrá tu asistencia, todo desde tu celular.</p>
-      <a href="#download" class="btn btn-primary btn-lg mt-3">Descargá Lemon App</a>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 animate">
+          <h1 class="display-4 fw-bold mb-3">Transformá tu experiencia en el gimnasio</h1>
+          <p class="lead mb-4">Simplificá tu rutina de gimnasio. Reservá clases, registrá tu asistencia y gestioná tu membresía, todo desde tu celular.</p>
+          <a href="#download" class="btn btn-primary btn-lg mt-3">Descargá la App</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <section id="features" class="py-5 bg-dark text-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-5">¿Por qué usar Lemon?</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="feature-card card bg-secondary p-4 rounded-3 shadow">
-            <div class="feature-icon mb-3">📅</div>
-            <h4>Reservá con un tap</h4>
-            <p>Explorá el horario de clases y reservá tu lugar al instante.</p>
+  <section id="features" class="py-5 bg-dark-custom text-light">
+    <div class="container">
+      <h2 class="fw-bold mb-5 text-center animate">Potenciá tu entrenamiento</h2>
+
+      <!-- Reservas -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 text-center text-md-start animate">
+          <div class="feature-icon mb-3">
+            <i class="bi bi-calendar-check" style="font-size:2rem;"></i>
           </div>
+          <h4>Reservá con un tap</h4>
+          <p>Explorá el horario de clases y reservá tu lugar al instante. Recibe recordatorios para no perder ninguna sesión.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Reservas instantáneas</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Recordatorios automáticos</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Cancelación fácil</li>
+          </ul>
         </div>
-        <div class="col-md-4">
-          <div class="feature-card card bg-secondary p-4 rounded-3 shadow">
-            <div class="feature-icon mb-3">📱</div>
-            <h4>Tu credencial digital</h4>
-            <p>Generá tu QR personal y registrá tu asistencia en segundos.</p>
-          </div>
+        <div class="col-md-6 text-center animate delay-1">
+          <img src="Screenshot_20250913_143815.png" class="img-fluid feature-img" alt="Reservas">
         </div>
-        <div class="col-md-4">
-          <div class="feature-card card bg-secondary p-4 rounded-3 shadow">
-            <div class="feature-icon mb-3">📊</div>
-            <h4>Historial de asistencia</h4>
-            <p>Consultá tu historial de clases y entrenamientos en un solo lugar.</p>
+      </div>
+
+      <!-- Credencial digital -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6 text-center text-md-start animate">
+          <div class="feature-icon mb-3">
+            <i class="bi bi-qr-code-scan" style="font-size:2rem;"></i>
           </div>
+          <h4>Tu credencial digital</h4>
+          <p>Generá tu QR personal y registrá tu asistencia en segundos. Olvidate de las tarjetas físicas.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> QR personal</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Escaneo rápido</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Sin contacto</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center animate delay-1">
+          <img src="Screenshot_20250913_154446.png" class="img-fluid feature-img" alt="Credencial digital">
+        </div>
+      </div>
+      
+          <!-- Solicitud de membresias -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 text-center text-md-start animate">
+          <div class="feature-icon mb-3">
+            <i class="bi bi-clock-history" style="font-size:2rem;"></i>
+          </div>
+          <h4>Solicitud de membresias</h4>
+          <p>Solicita tu membresía y obetene de forma detallada toda la info</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Solicitas la membresia que mas se adapta a vos </li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Un administrador se encargara de aprobarla </li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Visualizas todos los detalles en la home </li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center animate delay-1">
+          <img src="Screenshot_20250913_154318.png" class="img-fluid feature-img" alt="Extensión de vencimientos">
+        </div>
+      </div>
+      <!-- Historial de asistencia -->
+      <div class="row align-items-center mb-5 flex-md-row-reverse">
+        <div class="col-md-6 text-center text-md-start animate">
+          <div class="feature-icon mb-3">
+            <i class="bi bi-bar-chart-line" style="font-size:2rem;"></i>
+          </div>
+          <h4>Seguimiento de progreso</h4>
+          <p>Consultá tu historial de clases, seguí tu progreso y alcanzá tus metas fitness.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Estado de tus reservas</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Cancelas de forma facil</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Si no asistis mantenes las clases disponibles</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center animate delay-1">
+          <img src="Screenshot_20250913_143806.png" class="img-fluid feature-img" alt="Historial de asistencia">
+        </div>
+      </div>
+
+      <!-- Extensión de vencimientos -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 text-center text-md-start animate">
+          <div class="feature-icon mb-3">
+            <i class="bi bi-clock-history" style="font-size:2rem;"></i>
+          </div>
+          <h4>Extensión de vencimientos</h4>
+          <p>Extendé el vencimiento de tu membresía ante cualquier inconveniente de forma simple y rápida.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Extensiones automáticas</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Vos elegis en que momento las usas </li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Sin trámites engorrosos</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center animate delay-1">
+          <img src="Screenshot_20250913_143829.png" class="img-fluid feature-img" alt="Extensión de vencimientos">
+        </div>
+      </div>
+    </section>
+
+  <section id="screenshots" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-5 text-center">Conocé la app</h2>
+      <div class="row">
+        <div class="col-md-3 col-6 mb-4 animate">
+          <img src="https://placehold.co/200x400/8BC34A/FFFFFF/png?text=Pantalla+1" class="img-fluid rounded shadow" alt="Pantalla 1">
+        </div>
+        <div class="col-md-3 col-6 mb-4 animate delay-1">
+          <img src="https://placehold.co/200x400/FFC107/000000/png?text=Pantalla+2" class="img-fluid rounded shadow" alt="Pantalla 2">
+        </div>
+        <div class="col-md-3 col-6 mb-4 animate delay-2">
+          <img src="https://placehold.co/200x400/8BC34A/FFFFFF/png?text=Pantalla+3" class="img-fluid rounded shadow" alt="Pantalla 3">
+        </div>
+        <div class="col-md-3 col-6 mb-4 animate delay-3">
+          <img src="https://placehold.co/200x400/FFC107/000000/png?text=Pantalla+4" class="img-fluid rounded shadow" alt="Pantalla 4">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="screenshots" class="py-5 bg-light text-center">
-    <div class="container">
-      <h2 class="fw-bold mb-5 text-dark">La App en acción</h2>
-      <div id="screenshotCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row justify-content-center g-4">
-              <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="Screenshot_20250913_143801.png" class="d-block img-fluid carousel-img rounded shadow" alt="Screenshot 1">
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center g-4">
-              <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="Screenshot_20250913_143806.png" class="d-block img-fluid carousel-img rounded shadow" alt="Screenshot 2">
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center g-4">
-              <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="Screenshot_20250913_143815.png" class="d-block img-fluid carousel-img rounded shadow" alt="Screenshot 3">
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row justify-content-center g-4">
-              <div class="col-12 col-md-4 d-flex justify-content-center">
-                <img src="Screenshot_20250913_143829.png" class="d-block img-fluid carousel-img rounded shadow" alt="Screenshot 4">
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-    </div>
-  </section>
 
   <section id="download" class="py-5 text-center text-white bg-dark">
     <div class="container">
