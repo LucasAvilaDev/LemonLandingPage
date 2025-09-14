@@ -259,3 +259,76 @@ section {
   padding: 3rem;
   border-radius: 20px;
 }
+
+
+.btn-download {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-download:hover {
+  background: var(--lemon-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(139, 195, 74, 0.3);
+  color: white;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.social-link:hover {
+  color: var(--lemon-primary);
+}
+
+.accordion-button {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(139, 195, 74, 0.2);
+  color: var(--lemon-primary);
+}
+
+.accordion-body {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--lemon-accent); /* Texto claro */
+}
+
+.accordion-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* CORRECCIÓN: Asegurar contraste adecuado */
+.accordion-button {
+  background: rgba(0, 0, 0, 0.2); /* Fondo más oscuro */
+  color: var(--lemon-dark); /* Texto claro */
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(139, 195, 74, 0.3); /* Fondo más oscuro */
+  color: #1a1a1a; /* Texto oscuro para mejor contraste */
+}
+
+.accordion-body {
+  background: rgba(0, 0, 0, 0.1); /* Fondo más oscuro */
+  color: var(--lemon-dark); /* Texto claro */
+}
